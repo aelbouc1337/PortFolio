@@ -7,10 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        pacifico: ["Pacifico", "cursive"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      colors: {
+        bg: "#1A1A1A",
+        primary: "#4FC3F7",
+        F5: "#F5F5F5",
+      },
+      boxShadow: {},
+      filter: {},
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 20s linear infinite",
       },
     },
   },
